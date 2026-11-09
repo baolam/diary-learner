@@ -2,7 +2,7 @@
 
 Trang cá nhân ghi lại các dự án, giải thưởng, chứng chỉ và quá trình học ngành Trí tuệ nhân tạo tại Đại học FPT TP.HCM.
 
-Xem bản đang chạy: https://baolam.github.io/
+Xem bản đang chạy: https://baolam.github.io/diary-learner/
 
 ## Công nghệ
 

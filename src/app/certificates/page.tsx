@@ -7,6 +7,7 @@ import { PortfolioData, CertificateItem } from "@/types";
 import PixelHeader from "@/components/PixelHeader";
 import CosmicParticles from "@/components/CosmicParticles";
 import { soundFx } from "@/lib/sound";
+import { BASE_PATH } from "@/lib/basePath";
 import {
   Award,
   ArrowLeft,
@@ -303,7 +304,7 @@ export default function CertificatesPage() {
                   <div className="flex items-center gap-1.5">
                     {cert.pdfUrl && (
                       <a
-                        href={cert.pdfUrl}
+                        href={`${BASE_PATH}${cert.pdfUrl}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => {
