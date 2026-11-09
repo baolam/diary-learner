@@ -61,20 +61,9 @@ export interface TranslationData {
     modalCloseBtn: string;
     difficultyLabel: string;
     allProjectsBadge: string;
-    tabFlagship: string;
-    tabExplorer: string;
     repoDetails: string;
-    cloneCommand: string;
-    copied: string;
     copyClone: string;
-    starsLabel: string;
-    forksLabel: string;
-    lastUpdated: string;
-    searchRepoPlaceholder: string;
-    filterAllLangs: string;
-    totalReposFound: string;
-    noReposFound: string;
-    viewOnGithub: string;
+    copied: string;
   };
   awards: {
     badge: string;
@@ -198,20 +187,9 @@ export const TRANSLATIONS: Record<Language, TranslationData> = {
       modalCloseBtn: "Đóng cửa sổ",
       difficultyLabel: "Độ khó:",
       allProjectsBadge: "Dự án thực tế",
-      tabFlagship: "Dự Án Trọng Điểm",
-      tabExplorer: "Kho Mã Nguồn GitHub (Live 58+)",
       repoDetails: "Thông Tin Kho Lưu Trữ GitHub",
-      cloneCommand: "Lệnh Sao Chép Clone",
-      copied: "Đã sao chép!",
       copyClone: "Sao chép lệnh clone",
-      starsLabel: "Sao GitHub",
-      forksLabel: "Forks",
-      lastUpdated: "Cập nhật gần nhất",
-      searchRepoPlaceholder: "Tìm kiếm repo theo tên, mô tả hoặc từ khóa...",
-      filterAllLangs: "Tất cả ngôn ngữ",
-      totalReposFound: "kho lưu trữ được tìm thấy",
-      noReposFound: "Không tìm thấy kho lưu trữ nào phù hợp.",
-      viewOnGithub: "Mở trên GitHub",
+      copied: "Đã sao chép!",
     },
     awards: {
       badge: "Thành Tích & Vinh Danh",
@@ -333,20 +311,9 @@ export const TRANSLATIONS: Record<Language, TranslationData> = {
       modalCloseBtn: "Close Window",
       difficultyLabel: "Complexity:",
       allProjectsBadge: "Built & Working",
-      tabFlagship: "Flagship Projects",
-      tabExplorer: "GitHub Repositories (Live 58+)",
       repoDetails: "GitHub Repository Details",
-      cloneCommand: "Git Clone Command",
-      copied: "Copied!",
       copyClone: "Copy clone command",
-      starsLabel: "GitHub Stars",
-      forksLabel: "Forks",
-      lastUpdated: "Last updated",
-      searchRepoPlaceholder: "Search repos by name, description or topic...",
-      filterAllLangs: "All Languages",
-      totalReposFound: "repositories found",
-      noReposFound: "No repositories found matching your filter.",
-      viewOnGithub: "Open on GitHub",
+      copied: "Copied!",
     },
     awards: {
       badge: "Honors & Recognitions",

@@ -1,34 +1,21 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import initialData from "@/data/profile.json";
 import { PortfolioData, Quest } from "@/types";
 import PixelHeader from "@/components/PixelHeader";
 import CosmicParticles from "@/components/CosmicParticles";
 import QuestLog from "@/components/QuestLog";
-import GitHubExplorer from "@/components/GitHubExplorer";
 import DialogueModal from "@/components/DialogueModal";
 import { soundFx } from "@/lib/sound";
-import { Rocket, ArrowLeft, Trophy, ArrowRight, Layers, Award, FolderGit2, Sparkles } from "lucide-react";
+import { Rocket, ArrowLeft, Trophy, ArrowRight, Layers, Award } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function ProjectsPage() {
-  const [data, setData] = useState<PortfolioData>(initialData as PortfolioData);
+  const data = initialData as PortfolioData;
   const [selectedQuest, setSelectedQuest] = useState<Quest | null>(null);
-  const [activeTab, setActiveTab] = useState<"flagship" | "github">("flagship");
   const { t, language } = useLanguage();
-
-  useEffect(() => {
-    fetch("/api/data")
-      .then((res) => (res.ok ? res.json() : null))
-      .then((remoteData) => {
-        if (remoteData && remoteData.profile) {
-          setData((prev) => ({ ...prev, ...remoteData }));
-        }
-      })
-      .catch(() => {});
-  }, []);
 
   return (
     <div className="min-h-screen flex flex-col bg-[#f8fafc] text-slate-900 relative">
@@ -81,64 +68,10 @@ export default function ProjectsPage() {
           </div>
         </div>
 
-        {/* View Mode Tabs: Flagship Quests vs Live GitHub Repos */}
-        <div className="flex items-center gap-2 mb-8 border-b border-slate-200 pb-3">
-          <button
-            onClick={() => {
-              soundFx.playClick();
-              setActiveTab("flagship");
-            }}
-            className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-sans font-semibold transition-all flex items-center gap-2 cursor-pointer ${
-              activeTab === "flagship"
-                ? "bg-sky-700 text-white shadow-xs"
-                : "bg-white text-slate-700 hover:text-slate-900 border border-slate-200 hover:bg-slate-50"
-            }`}
-          >
-            <Rocket className="w-4 h-4" />
-            <span>{t.projects.tabFlagship}</span>
-            <span
-              className={`text-[10px] px-1.5 py-0.5 rounded-full ${
-                activeTab === "flagship" ? "bg-sky-800 text-sky-100" : "bg-slate-100 text-slate-600"
-              }`}
-            >
-              {data.quests.length}
-            </span>
-          </button>
-
-          <button
-            onClick={() => {
-              soundFx.playStarChime();
-              setActiveTab("github");
-            }}
-            className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-sans font-semibold transition-all flex items-center gap-2 cursor-pointer ${
-              activeTab === "github"
-                ? "bg-sky-700 text-white shadow-xs"
-                : "bg-white text-slate-700 hover:text-slate-900 border border-slate-200 hover:bg-slate-50"
-            }`}
-          >
-            <FolderGit2 className="w-4 h-4" />
-            <span>{t.projects.tabExplorer}</span>
-            <span
-              className={`text-[10px] px-1.5 py-0.5 rounded-full ${
-                activeTab === "github" ? "bg-sky-800 text-sky-100" : "bg-slate-100 text-slate-600"
-              }`}
-            >
-              Live
-            </span>
-          </button>
-        </div>
-
-        {/* Tab Content */}
-        {activeTab === "flagship" ? (
-          <QuestLog
-            quests={data.quests}
-            onSelectQuest={(quest) => setSelectedQuest(quest)}
-          />
-        ) : (
-          <section className="mb-14">
-            <GitHubExplorer />
-          </section>
-        )}
+        <QuestLog
+          quests={data.quests}
+          onSelectQuest={(quest) => setSelectedQuest(quest)}
+        />
 
         {/* Cross-linking to Skills & Awards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 pt-8 border-t border-slate-200">

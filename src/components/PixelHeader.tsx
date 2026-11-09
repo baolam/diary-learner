@@ -10,9 +10,6 @@ import { useLanguage } from "@/context/LanguageContext";
 
 interface Props {
   profile: Profile;
-  isCrtOn?: boolean;
-  onToggleCrt?: () => void;
-  onCoffeeClick?: () => void;
 }
 
 export default function PixelHeader({ profile }: Props) {

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Link from "next/link";
 import initialData from "@/data/profile.json";
 import { PortfolioData } from "@/types";
@@ -12,19 +12,8 @@ import { Trophy, ArrowLeft, ArrowRight, Rocket, Layers } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function AwardsPage() {
-  const [data, setData] = useState<PortfolioData>(initialData as PortfolioData);
+  const data = initialData as PortfolioData;
   const { t, language } = useLanguage();
-
-  useEffect(() => {
-    fetch("/api/data")
-      .then((res) => (res.ok ? res.json() : null))
-      .then((remoteData) => {
-        if (remoteData && remoteData.profile) {
-          setData((prev) => ({ ...prev, ...remoteData }));
-        }
-      })
-      .catch(() => {});
-  }, []);
 
   return (
     <div className="min-h-screen flex flex-col bg-[#f8fafc] text-slate-900 relative">

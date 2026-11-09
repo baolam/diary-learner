@@ -51,23 +51,6 @@ export interface QuestCitation {
   publisher: string;
 }
 
-export interface GitHubRepo {
-  id: number;
-  name: string;
-  fullName: string;
-  description: string | null;
-  htmlUrl: string;
-  cloneUrl: string;
-  language: string | null;
-  stars: number;
-  forks: number;
-  openIssues: number;
-  updatedAt: string;
-  topics: string[];
-  isFork: boolean;
-  defaultBranch?: string;
-}
-
 export interface Quest {
   id: string;
   title: string;

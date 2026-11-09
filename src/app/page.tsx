@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import initialData from "@/data/profile.json";
 import { PortfolioData, Quest } from "@/types";
 import PixelHeader from "@/components/PixelHeader";
@@ -23,50 +23,9 @@ import {
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function Home() {
-  const [data, setData] = useState<PortfolioData>(initialData as PortfolioData);
+  const data = initialData as PortfolioData;
   const [selectedQuest, setSelectedQuest] = useState<Quest | null>(null);
   const { t, language, translateQuest, translateAward } = useLanguage();
-
-  // Fetch updated data from API if available
-  useEffect(() => {
-    fetch("/api/data")
-      .then((res) => (res.ok ? res.json() : null))
-      .then((remoteData) => {
-        if (remoteData && remoteData.profile) {
-          setData((prev) => ({
-            ...prev,
-            ...remoteData,
-          }));
-        }
-      })
-      .catch(() => {});
-  }, []);
-
-  const handleTelescopeScan = () => {
-    setData((prev) => {
-      const newScans = prev.profile.stats.cupsOfCoffee + 1;
-      const newHp = Math.min(prev.profile.maxHp, prev.profile.hp + 1);
-      const updated = {
-        ...prev,
-        profile: {
-          ...prev.profile,
-          hp: newHp,
-          stats: {
-            ...prev.profile.stats,
-            cupsOfCoffee: newScans,
-          },
-        },
-      };
-
-      fetch("/api/status", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ passcode: "pixel2026", hp: newHp }),
-      }).catch(() => {});
-
-      return updated;
-    });
-  };
 
   const scrollToTop = () => {
     soundFx.playClick();
@@ -93,10 +52,7 @@ export default function Home() {
       {/* Main Container: Executive Hub */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-8 relative z-10">
         {/* Observatory Hero */}
-        <PixelRoom
-          characterName={data.profile.name}
-          onCoffeeClick={handleTelescopeScan}
-        />
+        <PixelRoom />
 
         {/* Profile & Live Status Card */}
         <StatusCard profile={data.profile} />
@@ -300,7 +256,7 @@ export default function Home() {
                   </>
                 ) : (
                   <>
-                    I've completed <strong>14 courses on Coursera</strong>: DeepLearning.AI, IBM ML & GenAI, Google Data Analytics, Michigan Python, Microsoft MOS...
+                    I&apos;ve completed <strong>14 courses on Coursera</strong>: DeepLearning.AI, IBM ML & GenAI, Google Data Analytics, Michigan Python, Microsoft MOS...
                   </>
                 )}
               </span>

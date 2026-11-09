@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useMemo } from "react";
 import Link from "next/link";
 import initialData from "@/data/profile.json";
 import { PortfolioData, CertificateItem } from "@/types";
@@ -26,22 +26,11 @@ import {
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function CertificatesPage() {
-  const [data, setData] = useState<PortfolioData>(initialData as PortfolioData);
+  const data = initialData as PortfolioData;
   const [searchQuery, setSearchQuery] = useState("");
   const [activeFilter, setActiveFilter] = useState<string>("ALL");
   const [copiedId, setCopiedId] = useState<string | null>(null);
   const { t, language } = useLanguage();
-
-  useEffect(() => {
-    fetch("/api/data")
-      .then((res) => (res.ok ? res.json() : null))
-      .then((remoteData) => {
-        if (remoteData && remoteData.profile) {
-          setData((prev) => ({ ...prev, ...remoteData }));
-        }
-      })
-      .catch(() => {});
-  }, []);
 
   const certificates: CertificateItem[] = data.certificates || [];
 

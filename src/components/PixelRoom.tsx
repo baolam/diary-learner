@@ -14,13 +14,7 @@ import {
 } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
-interface Props {
-  onNavigate?: (sectionId: string) => void;
-  onCoffeeClick?: () => void;
-  characterName: string;
-}
-
-export default function PixelRoom({ onNavigate }: Props) {
+export default function PixelRoom() {
   const { t, aiDomains, language } = useLanguage();
   const [currentDomainIndex, setCurrentDomainIndex] = useState(0);
 
