@@ -40,7 +40,6 @@ export interface TranslationData {
     currentFocusLabel: string;
     technicalHighlights: string;
     emailLabel: string;
-    phoneLabel: string;
     githubLabel: string;
     contactAction: string;
   };
@@ -166,7 +165,6 @@ export const TRANSLATIONS: Record<Language, TranslationData> = {
       currentFocusLabel: "Mối Quan Tâm Nghiên Cứu:",
       technicalHighlights: "Trọng Tâm Chuyên Môn:",
       emailLabel: "Email Liên Hệ",
-      phoneLabel: "Số Điện Thoại",
       githubLabel: "Hồ Sơ GitHub",
       contactAction: "Gửi Email Trao Đổi",
     },
@@ -290,7 +288,6 @@ export const TRANSLATIONS: Record<Language, TranslationData> = {
       currentFocusLabel: "Research Interests:",
       technicalHighlights: "Technical Core:",
       emailLabel: "Contact Email",
-      phoneLabel: "Phone Number",
       githubLabel: "GitHub Profile",
       contactAction: "Send an Email",
     },

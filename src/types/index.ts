@@ -13,7 +13,6 @@ export interface Profile {
   status: string;
   mood: string;
   location: string;
-  phone?: string;
   bio: string;
   socials: {
     github?: string;

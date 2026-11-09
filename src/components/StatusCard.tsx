@@ -4,7 +4,7 @@ import React from "react";
 import { Profile } from "@/types";
 import { soundFx } from "@/lib/sound";
 import { GithubIcon, LinkedinIcon, LeetCodeIcon, DeepMLIcon } from "./SocialIcons";
-import { Mail, Compass, Phone, BrainCircuit, GraduationCap, Clock } from "lucide-react";
+import { Mail, Compass, BrainCircuit, GraduationCap, Clock } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 interface Props {
@@ -56,16 +56,6 @@ export default function StatusCard({ profile }: Props) {
             <Compass className="w-3.5 h-3.5 text-slate-600" />
             <span>{displayLocation}</span>
           </div>
-
-          {profile.phone && (
-            <a
-              href={`tel:${profile.phone}`}
-              className="flex items-center gap-2 text-emerald-800 bg-emerald-50 border border-emerald-200 px-3 py-1.5 rounded-lg hover:border-emerald-400 transition-colors font-medium"
-            >
-              <Phone className="w-3.5 h-3.5 text-emerald-600" />
-              <span>{profile.phone}</span>
-            </a>
-          )}
         </div>
 
         {/* Live Observation Banner */}
@@ -81,16 +71,6 @@ export default function StatusCard({ profile }: Props) {
 
         {/* Social Comms & Coding Platforms Links */}
         <div className="flex flex-wrap items-center gap-2.5 pt-4 border-t border-slate-200">
-          {profile.phone && (
-            <a
-              href={`tel:${profile.phone}`}
-              onClick={() => soundFx.playClick()}
-              className="cosmic-btn cosmic-btn-secondary px-3 py-1.5 text-xs flex items-center gap-1.5 rounded-lg text-emerald-700 font-medium"
-            >
-              <Phone className="w-3.5 h-3.5 text-emerald-600" />
-              <span>{language === "vi" ? `Gọi (${profile.phone})` : `Call (${profile.phone})`}</span>
-            </a>
-          )}
           {profile.socials.github && (
             <a
               href={profile.socials.github}
