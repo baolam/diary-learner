@@ -1,0 +1,912 @@
+{
+  "profile": {
+    "name": "Nguyễn Đức Bảo Lâm",
+    "title": "Sinh viên ngành Trí Tuệ Nhân Tạo (AI), Đại học FPT TP.HCM",
+    "avatar": "astronaut",
+    "level": 32,
+    "exp": 95,
+    "maxExp": 100,
+    "hp": 100,
+    "maxHp": 100,
+    "mp": 100,
+    "maxMp": 100,
+    "gold": 5000,
+    "status": "Đang tìm hiểu sâu hơn về Computer Vision và các hệ thống AI trên thiết bị nhúng.",
+    "mood": "Đang theo học và nghiên cứu các đề tài AI, Computer Vision tại ĐH FPT",
+    "location": "TP. Thủ Đức, TP. Hồ Chí Minh",
+    "phone": "0327 089 143",
+    "bio": "Tôi mê công nghệ từ năm cấp hai, khi lần đầu tự lắp một mạch Arduino và thấy nó thực sự chạy. Đến giờ, học năm 3 ngành Trí tuệ nhân tạo tại Đại học FPT TP.HCM, cảm giác đó vẫn không đổi. Tôi thích nhất là lúc một mô hình mình huấn luyện xong chạy được thật, trên một con Raspberry Pi hay Arduino ngoài đời, không chỉ nằm trên giấy. Hầu hết dự án của tôi bắt đầu từ một chuyện rất cụ thể quanh mình, như kẹt xe ở thành phố, rừng bị phá, hay rác trôi trên mặt nước, và tôi theo nó đến cùng, từ một ý tưởng đến một hệ thống chạy được, có đo kết quả thật.",
+    "socials": {
+      "github": "https://github.com/baolam",
+      "email": "lam01662052827@gmail.com",
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "leetcode": "https://leetcode.com/u/lam01662052827/",
+      "deepml": "https://baolam.github.io/deep-ml/"
+    },
+    "stats": {
+      "projectsCompleted": 10,
+      "cupsOfCoffee": 720,
+      "linesOfCode": "150K+",
+      "bugsSquashed": 420
+    }
+  },
+  "quests": [
+    {
+      "id": "quest-edgeflow-ai",
+      "title": "EdgeFlow AI: Hệ Thống Điều Khiển Đèn Giao Thông Thông Minh Thích Ứng (Top 10 VEDC 2026)",
+      "type": "Main Quest",
+      "description": "Dự án này bắt đầu từ việc nhìn cảnh kẹt xe mỗi ngày ở TP.HCM và tự hỏi liệu đèn giao thông có thể 'thông minh' hơn không. Nhóm mình xây EdgeFlow AI: dùng camera giám sát và thị giác máy tính để đếm mật độ xe theo thời gian thực, rồi để thuật toán tự điều chỉnh chu kỳ đèn xanh theo luồng xe ở nhiều ngã tư liên thông. Trước khi đụng vào phần cứng, mình mô phỏng toàn bộ hệ thống trên SUMO (Simulation of Urban MObility), sau đó mới lắp một sa bàn hai ngã tư thật để kiểm chứng. Dự án lọt Top 10 Chung kết Toàn quốc VEDC 2026.",
+      "tags": ["Edge AI", "Computer Vision", "SUMO Simulation", "Smart Traffic", "Microcontroller", "Python", "Embedded C++", "IoT"],
+      "difficulty": "HARD",
+      "stars": 5,
+      "liveUrl": "https://daihoc.fpt.edu.vn/hcm/sinh-vien-truong-dai-hoc-fpt-xuat-sac-vao-top-10-chung-ket-toan-quoc-vedc-2026-voi-du-an-edgeflow-ai/",
+      "image": "/projects/traffic.png",
+      "featured": true,
+      "reward": "Top 10 Chung Kết Toàn Quốc Cuộc Thi Thiết Kế Điện Tử Việt Nam (VEDC 2026)",
+      "citations": [
+        {
+          "title": "Sinh viên Trường Đại học FPT xuất sắc vào Top 10 Chung kết toàn quốc VEDC 2026 với dự án EdgeFlow AI",
+          "url": "https://daihoc.fpt.edu.vn/hcm/sinh-vien-truong-dai-hoc-fpt-xuat-sac-vao-top-10-chung-ket-toan-quoc-vedc-2026-voi-du-an-edgeflow-ai/",
+          "publisher": "Trường Đại học FPT TP.HCM"
+        }
+      ]
+    },
+    {
+      "id": "quest-1",
+      "title": "Thuyền Thu Gom Rác Mặt Nước Tự Động (AIoT Autonomous Boat)",
+      "type": "Main Quest",
+      "description": "Mình lớn lên gần sông hồ nên rác trôi trên mặt nước là hình ảnh quen thuộc, và cũng là thứ mình muốn làm gì đó với nó. Mình dùng YOLOv8 chạy trên Raspberry Pi 4 để nhận diện rác thải nổi, rồi nối với Arduino qua UART để điều khiển động cơ của thuyền tự hành. Thuyền còn gắn cảm biến đo độ đục (NTU) và tổng chất rắn hòa tan (TDS), gửi dữ liệu chất lượng nước về máy chủ theo thời gian thực. Dự án đạt giải Vô địch Toàn cuộc thi Coolest Projects Malaysia 2022, do Raspberry Pi Foundation tổ chức.",
+      "tags": ["YOLOv8", "Computer Vision", "Raspberry Pi", "Python", "Edge AI", "Arduino C++", "UART/Serial", "IoT Sensors"],
+      "difficulty": "HARD",
+      "stars": 5,
+      "liveUrl": "https://web.archive.org/web/20240810060508/https://lamdong.edu.vn/vi/sgddetail/?param=lam-dong-doat-giai-vo-dich-bang-va-vo-dich-toan-cuoc-thi-lap-trinh-quoc-te-coolest-project-malaysia-2022",
+      "githubUrl": "https://github.com/baolam/boat-project-with-background-substraction",
+      "repoName": "boat-project-with-background-substraction",
+      "image": "/projects/boat.png",
+      "featured": true,
+      "reward": "Giải Vô Địch Toàn Cuộc Thi Coolest Projects Malaysia 2022",
+      "citations": [
+        {
+          "title": "Lâm Đồng đoạt giải Vô địch Bảng và Vô địch toàn Cuộc thi Lập trình quốc tế Coolest Project Malaysia 2022",
+          "url": "https://web.archive.org/web/20240810060508/https://lamdong.edu.vn/vi/sgddetail/?param=lam-dong-doat-giai-vo-dich-bang-va-vo-dich-toan-cuoc-thi-lap-trinh-quoc-te-coolest-project-malaysia-2022",
+          "publisher": "Sở GD&ĐT Tỉnh Lâm Đồng"
+        },
+        {
+          "title": "Lâm Đồng: Đoạt giải Cuộc thi lập trình quốc tế Coolest Project Malaysia 2022 của học sinh",
+          "url": "https://click49.vn/lam-dong-doat-giai-cuoc-thi-lap-trinh-quoc-te-coolest-project-malaysia-2022-cua-hoc-sinh/",
+          "publisher": "Tin Tức Lâm Đồng (Click49)"
+        }
+      ]
+    },
+    {
+      "id": "quest-2",
+      "title": "Hệ Thống AIoT Hỗ Trợ Giám Sát & Cảnh Báo Lâm Tặc, Cháy Rừng (Forest Guard AI)",
+      "type": "Main Quest",
+      "description": "Rừng ở quê mình từng bị chặt trộm và cháy, nên mình muốn thử xem công nghệ có giúp được gì không. Hệ thống nghe tiếng cưa máy bằng một mô hình phân loại âm thanh (CNN trên Mel-Spectrogram), kết hợp xử lý ảnh để phát hiện chuyển động lạ trong rừng. Vì khu vực không có sóng ổn định, mình dùng module LoRa để gửi tín hiệu cảnh báo tầm xa về trạm kiểm lâm. Dự án đạt giải Nhất Khoa học Kỹ thuật cấp tỉnh Lâm Đồng 2021 và được chọn dự Vòng Quốc gia.",
+      "tags": ["Audio Classification", "Computer Vision", "LoRa Wireless", "Embedded C++", "Python", "Socket.io", "Raspberry Pi"],
+      "difficulty": "HARD",
+      "stars": 5,
+      "liveUrl": "https://baolamdong.vn/hoc-tro-chia-lua-cung-cong-dong-287160.html",
+      "githubUrl": "https://github.com/baolam/noise-detector",
+      "repoName": "noise-detector",
+      "image": "/projects/forest.png",
+      "featured": true,
+      "reward": "Giải Nhất KHKT Tỉnh Lâm Đồng 2021 (Tham dự Vòng Quốc Gia)",
+      "citations": [
+        {
+          "title": "Học trò chia lửa cùng cộng đồng - Sáng chế thiết bị cảnh báo bảo vệ rừng",
+          "url": "https://baolamdong.vn/hoc-tro-chia-lua-cung-cong-dong-287160.html",
+          "publisher": "Báo Lâm Đồng Online"
+        },
+        {
+          "title": "Trao 41 giải thưởng Cuộc thi Sáng tạo thanh thiếu niên, nhi đồng lần thứ 17 (2021)",
+          "url": "https://baolamdong.vn/trao-41-giai-thuong-cuoc-thi-sang-tao-thanh-thieu-nien-nhi-dong-lan-thu-17-2021-287415.html",
+          "publisher": "Báo Lâm Đồng Online"
+        }
+      ]
+    },
+    {
+      "id": "quest-3",
+      "title": "Triển Khai Kiến Trúc Transformer Bằng PyTorch (Transformer From Scratch)",
+      "type": "Main Quest",
+      "description": "Đây là một bài tập của deep-ml, nơi mình luyện viết lại các thuật toán Machine Learning từ đầu. Theo gợi ý của họ, mình đọc bài báo 'Attention Is All You Need' và tự tay viết lại toàn bộ kiến trúc Transformer bằng PyTorch, không dùng thư viện có sẵn, để thật sự hiểu nó hoạt động ra sao. Mình tự code từng phần: Multi-Head Self-Attention, mã hóa vị trí (Sinusoidal Positional Encoding), Layer Normalization, Residual Connections, và bộ điều phối tốc độ học Noam Scheduler.",
+      "tags": ["PyTorch", "Deep Learning", "Transformer", "Self-Attention", "NLP", "Python"],
+      "difficulty": "MEDIUM",
+      "stars": 5,
+      "liveUrl": "https://github.com/baolam/attention-is-all-you-need-build-the-transformer-from-scratch",
+      "githubUrl": "https://github.com/baolam/attention-is-all-you-need-build-the-transformer-from-scratch",
+      "repoName": "attention-is-all-you-need-build-the-transformer-from-scratch",
+      "image": "/projects/transformer.png",
+      "featured": true,
+      "reward": "Đề tài nghiên cứu kiến trúc mô hình Deep Learning",
+      "citations": [
+        {
+          "title": "Attention Is All You Need: Build The Transformer From Scratch",
+          "url": "https://github.com/baolam/attention-is-all-you-need-build-the-transformer-from-scratch",
+          "publisher": "GitHub Open Source Research"
+        }
+      ]
+    },
+    {
+      "id": "quest-speed-estimation",
+      "title": "Hệ Thống Ước Lượng Tốc Độ Phương Tiện Thời Gian Thực (Vehicle Speed Estimation)",
+      "type": "Main Quest",
+      "description": "Hệ thống ước lượng tốc độ phương tiện trên luồng camera giám sát thời gian thực: phối hợp phát hiện phương tiện bằng YOLOv8, theo dõi quỹ đạo qua ByteTrack, và chuẩn hóa biến đổi phối cảnh (Perspective Transform) sang tọa độ thực địa để tính toán vận tốc xe chạy với sai số cực thấp.",
+      "tags": ["YOLOv8", "Computer Vision", "ByteTrack", "Perspective Transform", "Python", "TypeScript", "OpenCV"],
+      "difficulty": "HARD",
+      "stars": 5,
+      "liveUrl": "https://github.com/baolam/vehicle-speed-estimation",
+      "githubUrl": "https://github.com/baolam/vehicle-speed-estimation",
+      "repoName": "vehicle-speed-estimation",
+      "image": "/projects/traffic.png",
+      "featured": true,
+      "reward": "Giải pháp giám sát giao thông thông minh thời gian thực",
+      "citations": [
+        {
+          "title": "Real-Time Vehicle Speed Estimation using YOLOv8 & ByteTrack",
+          "url": "https://github.com/baolam/vehicle-speed-estimation",
+          "publisher": "GitHub Intelligent Transportation"
+        }
+      ]
+    },
+    {
+      "id": "quest-gat",
+      "title": "Mạng Nơ-ron Chú Ý Đồ Thị (Graph Attention Networks - GAT)",
+      "type": "Main Quest",
+      "description": "Nghiên cứu và triển khai cấu trúc Graph Attention Networks (GAT) sử dụng PyTorch Geometric cho bài toán phân loại node và phân loại toàn đồ thị. Áp dụng cơ chế Masked Self-Attention trên cấu trúc đồ thị phi Euclid để trích xuất biểu diễn đặc trưng vượt trội so với GCN truyền thống.",
+      "tags": ["Graph Neural Networks", "GAT", "PyTorch Geometric", "Deep Learning", "Python"],
+      "difficulty": "HARD",
+      "stars": 5,
+      "liveUrl": "https://github.com/baolam/graph-attention-classification",
+      "githubUrl": "https://github.com/baolam/graph-attention-classification",
+      "repoName": "graph-attention-classification",
+      "image": "/projects/transformer.png",
+      "featured": true,
+      "reward": "Đề tài nghiên cứu Graph Deep Learning chuyên sâu",
+      "citations": [
+        {
+          "title": "Graph Attention Networks (GAT) for Node and Graph Classification",
+          "url": "https://github.com/baolam/graph-attention-classification",
+          "publisher": "GitHub Deep Learning Research"
+        }
+      ]
+    },
+    {
+      "id": "quest-topic-tracking",
+      "title": "Phát Hiện & Theo Dõi Chủ Đề Động Trên Dòng Dữ Liệu Xã Hội (SADStream)",
+      "type": "Main Quest",
+      "description": "Hệ thống phát hiện và theo dõi sự chuyển dịch chủ đề động (Dynamic Topic Detection & Tracking) trên luồng dữ liệu văn bản thời gian thực bằng thuật toán SADStream (kết hợp phân rã hàm thích ứng Adaptive Decay và nén bộ nhớ Compressed Memory) để xử lý lượng lớn dữ liệu mạng xã hội với độ trễ thấp.",
+      "tags": ["NLP", "Stream Mining", "Clustering", "Social Streams", "Python", "Data Mining"],
+      "difficulty": "HARD",
+      "stars": 5,
+      "liveUrl": "https://github.com/baolam/topic-detection-tracking-demo",
+      "githubUrl": "https://github.com/baolam/topic-detection-tracking-demo",
+      "repoName": "topic-detection-tracking-demo",
+      "image": "/projects/algo.png",
+      "featured": true,
+      "reward": "Nghiên cứu khai phá dữ liệu luồng văn bản thời gian thực",
+      "citations": [
+        {
+          "title": "Dynamic Topic Detection & Tracking on Social Streams using SADStream",
+          "url": "https://github.com/baolam/topic-detection-tracking-demo",
+          "publisher": "GitHub NLP Stream Mining"
+        }
+      ]
+    },
+    {
+      "id": "quest-5",
+      "title": "Thư Viện Cấu Trúc Dữ Liệu & Giải Thuật (Competitive Programming & Algorithms)",
+      "type": "Main Quest",
+      "description": "Mình tổng hợp lại những cấu trúc dữ liệu và giải thuật mình hay dùng khi luyện thi lập trình: Cây phân đoạn (Segment Tree), Quy hoạch động, các thuật toán trên đồ thị (Dijkstra, DFS/BFS), viết bằng C++ và Python. Đây cũng là cách mình rèn lại tư duy phân tích độ phức tạp thời gian và không gian.",
+      "tags": ["C++ STL", "Data Structures", "Algorithms", "Optimization", "Dynamic Programming"],
+      "difficulty": "MEDIUM",
+      "stars": 5,
+      "liveUrl": "https://github.com/baolam/c_plus_plus_exercise",
+      "githubUrl": "https://github.com/baolam/c_plus_plus_exercise",
+      "repoName": "c_plus_plus_exercise",
+      "image": "/projects/algo.png",
+      "featured": false,
+      "reward": "Giải Nhất Tin Học Trẻ 2020 & 2 Giải Ba HSG Tỉnh Môn Tin Học"
+    },
+    {
+      "id": "quest-6",
+      "title": "Website Portfolio Cá Nhân & Bảng Điều Khiển Quản Trị (Next.js CMS)",
+      "type": "Main Quest",
+      "description": "Trang web này mình tự xây để giới thiệu các dự án của mình theo cách riêng: dùng Next.js, TypeScript, Tailwind CSS, có hiệu ứng âm thanh qua Web Audio API và một trang quản trị riêng để mình tự cập nhật nội dung.",
+      "tags": ["Next.js 16", "TypeScript", "Tailwind CSS", "Web Audio API", "RESTful API"],
+      "difficulty": "MEDIUM",
+      "stars": 5,
+      "liveUrl": "https://github.com/baolam",
+      "githubUrl": "https://github.com/baolam",
+      "repoName": "baolam",
+      "image": "/projects/observatory.png",
+      "featured": false,
+      "reward": "Dự án phát triển web cá nhân"
+    },
+    {
+      "id": "quest-intelligent-drug",
+      "title": "Máy Nhắc & Phát Thuốc Thông Minh (Intelligent Drug Dispenser)",
+      "type": "Side Quest",
+      "description": "Mình làm một máy phát thuốc tự động cho người lớn tuổi hay quên giờ uống thuốc. Máy dùng DeepFace để nhận diện đúng người trước khi mở ngăn thuốc, kết hợp Arduino để điều khiển cơ cấu phát thuốc theo lịch, và gửi cảnh báo nhắc giờ theo thời gian thực.",
+      "tags": ["DeepFace", "Face Recognition", "Arduino", "IoT", "JavaScript", "Healthcare"],
+      "difficulty": "MEDIUM",
+      "stars": 4,
+      "liveUrl": "https://github.com/baolam/intelligent-drug",
+      "githubUrl": "https://github.com/baolam/intelligent-drug",
+      "repoName": "intelligent-drug",
+      "image": "/projects/intelligent-drug.png",
+      "featured": false
+    },
+    {
+      "id": "quest-device-for-blind",
+      "title": "Thiết Bị Hỗ Trợ Người Khiếm Thị (Assistive Wearable)",
+      "type": "Side Quest",
+      "description": "Mình thử làm một thiết bị đeo hỗ trợ người khiếm thị di chuyển an toàn hơn, kết hợp một mô hình AI biên nhận diện vật cản qua camera nhỏ và cảm biến siêu âm đo khoảng cách. Mình dùng thêm một LLM để diễn giải tình huống phía trước thành câu nói ngắn, rồi điều khiển phản hồi lại cho người dùng bằng giọng nói hoặc rung.",
+      "tags": ["Edge AI", "Computer Vision", "Ultrasonic Sensor", "Arduino C++", "LLM", "Assistive Technology"],
+      "difficulty": "MEDIUM",
+      "stars": 4,
+      "liveUrl": "https://github.com/baolam/device-for-blind-people",
+      "githubUrl": "https://github.com/baolam/device-for-blind-people",
+      "repoName": "device-for-blind-people",
+      "image": "/projects/blind-assist.png",
+      "featured": false
+    },
+    {
+      "id": "quest-fungi-aiot",
+      "title": "Hệ Thống AIoT Giám Sát Trại Nấm (Fungi Farming)",
+      "type": "Side Quest",
+      "description": "Một người quen trồng nấm nhờ mình làm cách theo dõi nhiệt độ, độ ẩm trong trại từ xa, nên mình viết một hệ thống AIoT gắn cảm biến môi trường, gửi cảnh báo theo thời gian thực, và dùng một LLM để tóm tắt dữ liệu cảm biến thành báo cáo ngắn, dễ đọc mỗi ngày.",
+      "tags": ["AIoT", "IoT Sensors", "Smart Farming", "LLM", "JavaScript"],
+      "difficulty": "EASY",
+      "stars": 3,
+      "liveUrl": "https://github.com/baolam/fungi-aiot-management",
+      "githubUrl": "https://github.com/baolam/fungi-aiot-management",
+      "repoName": "fungi-aiot-management",
+      "image": "/projects/fungi.png",
+      "featured": false
+    },
+    {
+      "id": "quest-conveyor-belt",
+      "title": "Băng Chuyền Tự Động Phân Loại Lỗi Sản Phẩm (Conveyor Belt Defect Detection)",
+      "type": "Side Quest",
+      "description": "Mình làm một mô hình băng chuyền nhỏ, dùng deep learning để phát hiện sản phẩm lỗi qua camera, rồi điều khiển PLC và Arduino để tự động gạt sản phẩm lỗi ra khỏi dây chuyền.",
+      "tags": ["Computer Vision", "Deep Learning", "Arduino C++", "PLC", "Automation"],
+      "difficulty": "MEDIUM",
+      "stars": 4,
+      "liveUrl": "https://github.com/baolam/conveyor-belt-project",
+      "githubUrl": "https://github.com/baolam/conveyor-belt-project",
+      "repoName": "conveyor-belt-project",
+      "image": "/projects/conveyor.png",
+      "featured": false
+    },
+    {
+      "id": "quest-car-dealership",
+      "title": "Web App Bán Xe Đa Chi Nhánh (Cars Dealership Capstone)",
+      "type": "Side Quest",
+      "description": "Đây là dự án capstone lớn nhất mình từng làm: một web app cho một hãng bán xe có nhiều chi nhánh ở Mỹ. Mình chia hệ thống thành nhiều phần: Django quản lý người dùng và dữ liệu xe, lưu vào SQLite; một service riêng bằng Node.js và Express lưu thông tin đại lý và đánh giá khách hàng vào MongoDB; và một service Flask dùng NLTK để tự động chấm cảm xúc (tích cực, trung lập, tiêu cực) cho từng đánh giá. Toàn bộ được đóng gói bằng Docker và triển khai lên IBM Cloud.",
+      "tags": ["Django", "React", "Node.js", "Express", "MongoDB", "SQLite", "Flask", "NLTK", "Docker", "Microservices"],
+      "difficulty": "HARD",
+      "stars": 5,
+      "liveUrl": "https://github.com/baolam/fullstack_developer_capstone",
+      "githubUrl": "https://github.com/baolam/fullstack_developer_capstone",
+      "repoName": "fullstack_developer_capstone",
+      "image": "/projects/car-dealership.png",
+      "featured": false
+    }
+  ],
+  "skills": [
+    {
+      "name": "Python",
+      "category": "Ngôn Ngữ Lập Trình",
+      "icon": "radar",
+      "usedIn": ["quest-edgeflow-ai", "quest-1", "quest-2", "quest-3", "quest-speed-estimation", "quest-gat", "quest-topic-tracking"]
+    },
+    {
+      "name": "C++",
+      "category": "Ngôn Ngữ Lập Trình",
+      "icon": "map",
+      "usedIn": ["quest-edgeflow-ai", "quest-1", "quest-2", "quest-5", "quest-device-for-blind", "quest-conveyor-belt"]
+    },
+    {
+      "name": "TypeScript",
+      "category": "Ngôn Ngữ Lập Trình",
+      "icon": "database",
+      "usedIn": ["quest-speed-estimation", "quest-6"]
+    },
+    {
+      "name": "JavaScript",
+      "category": "Ngôn Ngữ Lập Trình",
+      "icon": "database",
+      "usedIn": ["quest-intelligent-drug", "quest-fungi-aiot"]
+    },
+    {
+      "name": "PyTorch",
+      "category": "Mô Hình AI & Deep Learning",
+      "icon": "radar",
+      "usedIn": ["quest-3", "quest-gat"]
+    },
+    {
+      "name": "Graph Attention Networks (GAT)",
+      "category": "Mô Hình AI & Deep Learning",
+      "icon": "radar",
+      "usedIn": ["quest-gat"]
+    },
+    {
+      "name": "Transformer & Self-Attention",
+      "category": "Mô Hình AI & Deep Learning",
+      "icon": "radar",
+      "usedIn": ["quest-3"]
+    },
+    {
+      "name": "Audio Classification (CNN)",
+      "category": "Mô Hình AI & Deep Learning",
+      "icon": "radar",
+      "usedIn": ["quest-2"]
+    },
+    {
+      "name": "NLP & Khai Phá Dữ Liệu",
+      "category": "Mô Hình AI & Deep Learning",
+      "icon": "radar",
+      "usedIn": ["quest-3", "quest-topic-tracking"]
+    },
+    {
+      "name": "YOLOv8",
+      "category": "Thị Giác Máy Tính",
+      "icon": "telescope",
+      "usedIn": ["quest-1", "quest-speed-estimation"]
+    },
+    {
+      "name": "OpenCV",
+      "category": "Thị Giác Máy Tính",
+      "icon": "palette",
+      "usedIn": ["quest-speed-estimation"]
+    },
+    {
+      "name": "DeepFace (Face Recognition)",
+      "category": "Thị Giác Máy Tính",
+      "icon": "palette",
+      "usedIn": ["quest-intelligent-drug"]
+    },
+    {
+      "name": "LLM (Tạo báo cáo & điều khiển bằng ngôn ngữ tự nhiên)",
+      "category": "Mô Hình AI & Deep Learning",
+      "icon": "radar",
+      "usedIn": ["quest-fungi-aiot", "quest-device-for-blind"]
+    },
+    {
+      "name": "Raspberry Pi",
+      "category": "Edge AI & IoT",
+      "icon": "rocket",
+      "usedIn": ["quest-1", "quest-2"]
+    },
+    {
+      "name": "Arduino",
+      "category": "Edge AI & IoT",
+      "icon": "rocket",
+      "usedIn": ["quest-1", "quest-intelligent-drug", "quest-device-for-blind", "quest-conveyor-belt"]
+    },
+    {
+      "name": "LoRa Wireless",
+      "category": "Edge AI & IoT",
+      "icon": "satellite",
+      "usedIn": ["quest-2"]
+    },
+    {
+      "name": "SQLite (CSDL quan hệ)",
+      "category": "Cơ Sở Dữ Liệu",
+      "icon": "database",
+      "usedIn": ["quest-car-dealership"]
+    },
+    {
+      "name": "MongoDB (CSDL NoSQL)",
+      "category": "Cơ Sở Dữ Liệu",
+      "icon": "database",
+      "usedIn": ["quest-car-dealership"]
+    },
+    {
+      "name": "Cảm Biến IoT & AIoT",
+      "category": "Edge AI & IoT",
+      "icon": "satellite",
+      "usedIn": ["quest-1", "quest-edgeflow-ai", "quest-intelligent-drug", "quest-fungi-aiot", "quest-device-for-blind"]
+    },
+    {
+      "name": "Cấu Trúc Dữ Liệu & Giải Thuật",
+      "category": "Thuật Toán",
+      "icon": "map",
+      "usedIn": ["quest-5"]
+    },
+    {
+      "name": "Next.js & Phát Triển Web",
+      "category": "Kỹ Thuật Phần Mềm",
+      "icon": "database",
+      "usedIn": ["quest-6"]
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t-0",
+      "period": "2025 - 2026",
+      "role": "Olympic AI & Cuộc thi Thiết kế Điện tử Toàn quốc",
+      "guild": "Olympic AI, VEDC 2026 & RMIT Hackathon",
+      "desc": "Năm này mình tham gia khá nhiều cuộc thi liên tiếp: EdgeFlow AI đưa nhóm mình vào Top 10 Chung kết Toàn quốc VEDC 2026, mình cùng đội NewEraPTL giành Đồng Giải Ba Olympic AI Sinh viên khu vực miền Nam 2026 (xếp hạng 44/191) sau 6 giờ giải bài toán AI thực tế, và lọt Top 23 trên 299 đội tại RMIT Hackathon 2026. Năm trước đó mình cũng tham gia Olympic AI 2025 và nhận giải Khuyến khích."
+    },
+    {
+      "id": "t-1",
+      "period": "2024 - Hiện tại",
+      "role": "Sinh viên Chuyên ngành Trí Tuệ Nhân Tạo (AI)",
+      "guild": "Trường Đại học FPT TP.HCM",
+      "desc": "Mình vào học chuyên ngành Trí tuệ nhân tạo tại Đại học FPT TP.HCM từ đây, và được công nhận Sinh viên Xuất sắc 4 kỳ liên tiếp (Spring, Summer, Fall 2025 và Spring 2026). Đây cũng là giai đoạn mình đi sâu hơn vào Deep Learning, Computer Vision và Edge AIoT."
+    },
+    {
+      "id": "t-2",
+      "period": "2022",
+      "role": "Đại diện tham gia Cuộc thi Coolest Projects Malaysia",
+      "guild": "Raspberry Pi Foundation",
+      "desc": "Mình đại diện đi thi Coolest Projects Malaysia với chiếc thuyền tự hành thu gom rác mặt nước, dùng YOLOv8 và vài cảm biến đo chất lượng nước. Lần đầu mình mang một dự án tự làm ra nước ngoài, và cuối cùng giành được giải Vô địch Toàn cuộc thi."
+    },
+    {
+      "id": "t-3",
+      "period": "2021",
+      "role": "Tham gia Cuộc thi Khoa học Kỹ thuật (KHKT) Cấp Tỉnh",
+      "guild": "Sở GD&ĐT Tỉnh Lâm Đồng",
+      "desc": "Mình làm một hệ thống AI nghe tiếng cưa máy và nhận diện chuyển động để cảnh báo xâm phạm rừng, mang đi thi Khoa học Kỹ thuật cấp tỉnh. Đạt giải Nhất và được chọn dự Vòng Quốc gia."
+    },
+    {
+      "id": "t-4",
+      "period": "2020",
+      "role": "Tham gia Hội Thi Tin Học Trẻ Tỉnh Lâm Đồng (Bảng D2)",
+      "guild": "Tỉnh Đoàn & Sở GD&ĐT Lâm Đồng",
+      "desc": "Lần đầu mình mang một sản phẩm phần mềm tự viết đi thi Tin học trẻ cấp tỉnh, và giành giải Nhất."
+    },
+    {
+      "id": "t-5",
+      "period": "2021 - 2024",
+      "role": "Học sinh THPT & Thành viên Đội tuyển Tin học",
+      "guild": "Trường THCS & THPT Đống Đa, Đà Lạt",
+      "desc": "Những năm cấp 3 ở Trường THCS & THPT Đống Đa, Đà Lạt, mình vừa học vừa tham gia đội tuyển Tin học, đạt 2 giải Ba kỳ thi Học sinh giỏi cấp tỉnh (2021, 2022), và tốt nghiệp loại Giỏi."
+    }
+  ],
+  "awards": [
+    {
+      "id": "aw-ai-2026",
+      "year": "2026",
+      "title": "Giải Ba Olympic Trí Tuệ Nhân Tạo (AI), Vòng Khu Vực Miền Nam 2026",
+      "issuer": "Hội Tin Học Việt Nam & Ban Tổ Chức OlpAI",
+      "badge": "GIẢI BA OLYMPIC AI (RANK 44/191)",
+      "scope": "Khu vực",
+      "category": "Olympic AI",
+      "desc": "Mình cùng hai người bạn trong đội NewEraPTL (Nguyễn Công Thịnh, Ngô Văn Trường Phúc) dành 6 giờ giải các bài toán AI thực tế tại Olympic Trí tuệ nhân tạo Sinh viên Việt Nam (OlpAI) 2026, và giành Đồng Giải Ba, xếp hạng 44/191.",
+      "articleUrl": "https://daihoc.fpt.edu.vn/hcm/sinh-vien-truong-dai-hoc-fpt-ghi-dau-an-tai-olympic-tri-tue-nhan-tao-2026-xuat-sac-chinh-phuc-hai-giai-thuong-an-tuong/"
+    },
+    {
+      "id": "aw-vedc-2026",
+      "year": "2026",
+      "title": "Top 10 Chung Kết Toàn Quốc Cuộc Thi Thiết Kế Điện Tử Việt Nam (VEDC) 2026, Đề Tài EdgeFlow AI",
+      "issuer": "Hội Vô Tuyến - Điện Tử Việt Nam (REV) & BTC VEDC 2026",
+      "badge": "TOP 10 CHUNG KẾT TOÀN QUỐC VEDC",
+      "scope": "Quốc gia",
+      "category": "Hackathon & Đổi mới sáng tạo",
+      "desc": "Đội 31µF của mình (cùng Nguyễn Công Thịnh, Ngô Văn Trường Phúc, Đỗ Minh Hiển, dưới sự hướng dẫn của thầy Nguyễn Xuân Huy) vượt qua vòng Bán kết và vào Top 10 Chung kết Toàn quốc với EdgeFlow AI, hệ thống điều khiển đèn giao thông thông minh mà nhóm mình dành nhiều tháng để xây.",
+      "articleUrl": "https://daihoc.fpt.edu.vn/hcm/sinh-vien-truong-dai-hoc-fpt-xuat-sac-vao-top-10-chung-ket-toan-quoc-vedc-2026-voi-du-an-edgeflow-ai/"
+    },
+    {
+      "id": "aw-rmit-2026",
+      "year": "2026",
+      "title": "Top 23 Cuộc Thi RMIT Hackathon 2026 (Xếp Hạng 23/299 Đội)",
+      "issuer": "Đại học RMIT Việt Nam (RMIT University Vietnam)",
+      "badge": "TOP 23/299 RMIT HACKATHON",
+      "scope": "Quốc gia",
+      "category": "Hackathon & Đổi mới sáng tạo",
+      "desc": "Mình tham gia RMIT Hackathon 2026 cùng đội RMIT_SGS_AstraPTLD_C1, và tụi mình xếp hạng 23 trên tổng số 299 đội thi toàn quốc. Bảng xếp hạng cuộc thi được công bố trên Kaggle.",
+      "articleUrl": "https://www.kaggle.com/competitions/rmit-hackathon-2026/leaderboard"
+    },
+    {
+      "id": "aw-fpt-spring-2026",
+      "year": "2026",
+      "title": "Sinh Viên Xuất Sắc Học Kỳ Spring 2026 (Honor Student)",
+      "issuer": "Trường Đại học FPT TP.HCM",
+      "badge": "SV XUẤT SẮC SPRING 2026",
+      "scope": "Đại học FPT",
+      "category": "Khen thưởng Học thuật",
+      "desc": "Được công nhận Sinh viên Xuất sắc học kỳ Spring 2026, chuyên ngành Trí tuệ nhân tạo tại Đại học FPT TP.HCM."
+    },
+    {
+      "id": "aw-ai-2025",
+      "year": "2025",
+      "title": "Giải Khuyến Khích Olympic Trí Tuệ Nhân Tạo (AI), Vòng Khu Vực Miền Nam 2025",
+      "issuer": "Hội Tin Học Việt Nam & Ban Tổ Chức OlpAI",
+      "badge": "GIẢI KK OLYMPIC AI",
+      "scope": "Khu vực",
+      "category": "Olympic AI",
+      "desc": "Năm trước đó, mình cũng thử sức ở vòng Khu vực miền Nam của kỳ thi này và nhận giải Khuyến khích."
+    },
+    {
+      "id": "aw-fpt-fall-2025",
+      "year": "2025",
+      "title": "Top 100 Sinh Viên Xuất Sắc Học Kỳ Fall 2025 (Top 100 Excellent Students)",
+      "issuer": "Trường Đại học FPT TP.HCM",
+      "badge": "TOP 100 SV XUẤT SẮC FALL 2025",
+      "scope": "Đại học FPT",
+      "category": "Khen thưởng Học thuật",
+      "desc": "Lọt Top 100 Sinh viên Xuất sắc toàn trường học kỳ Fall 2025."
+    },
+    {
+      "id": "aw-fpt-summer-2025",
+      "year": "2025",
+      "title": "Top 100 Sinh Viên Xuất Sắc Học Kỳ Summer 2025 (Top 100 Excellent Students)",
+      "issuer": "Trường Đại học FPT TP.HCM",
+      "badge": "TOP 100 SV XUẤT SẮC SUMMER 2025",
+      "scope": "Đại học FPT",
+      "category": "Khen thưởng Học thuật",
+      "desc": "Lọt Top 100 Sinh viên Xuất sắc toàn trường học kỳ Summer 2025."
+    },
+    {
+      "id": "aw-fpt-spring-2025",
+      "year": "2025",
+      "title": "Top 100 Sinh Viên Xuất Sắc Học Kỳ Spring 2025 (Top 100 Excellent Students)",
+      "issuer": "Trường Đại học FPT TP.HCM",
+      "badge": "TOP 100 SV XUẤT SẮC SPRING 2025",
+      "scope": "Đại học FPT",
+      "category": "Khen thưởng Học thuật",
+      "desc": "Lọt Top 100 Sinh viên Xuất sắc toàn trường ngay từ học kỳ đầu tiên của chuyên ngành AI, Spring 2025."
+    },
+    {
+      "id": "aw-grad-2024",
+      "year": "2024",
+      "title": "Tốt Nghiệp THPT Loại Giỏi & Danh Hiệu Học Sinh Xuất Sắc",
+      "issuer": "Trường THCS & THPT Đống Đa, Đà Lạt",
+      "badge": "TỐT NGHIỆP LOẠI GIỎI",
+      "scope": "Học thuật",
+      "category": "Học thuật",
+      "desc": "Tốt nghiệp THPT loại Giỏi, sau những năm vừa học vừa tự mày mò làm các dự án công nghệ nhỏ.",
+      "articleUrl": "https://baolamdong.vn/da-lat-tuyen-duong-va-trao-thuong-cho-hoc-sinh-gioi-cac-cap-nam-hoc-2022-2023-288151.html"
+    },
+    {
+      "id": "aw-khkt-2023",
+      "year": "2023",
+      "title": "Giải Nhất Cuộc Thi Khoa Học Kỹ Thuật (KHKT) Cấp Tỉnh Lâm Đồng (2023)",
+      "issuer": "Sở Giáo dục & Đào tạo Tỉnh Lâm Đồng",
+      "badge": "GIẢI NHẤT KHKT CẤP TỈNH",
+      "scope": "Cấp tỉnh",
+      "category": "Sáng tạo KHKT",
+      "desc": "Giải Nhất cấp tỉnh năm 2023 với một đề tài khoa học kỹ thuật mình tự nghiên cứu."
+    },
+    {
+      "id": "aw-olympic-mttn-2023",
+      "year": "2023",
+      "title": "Huy Chương Đồng Vòng Chung Kết Olympic Tin Học Miền Trung - Tây Nguyên (2023)",
+      "issuer": "Trường ĐH CNTT & TT Việt - Hàn (VKU) & Ban Tổ Chức",
+      "badge": "HUY CHƯƠNG ĐỒNG OLYMPIC",
+      "scope": "Khu vực",
+      "category": "Olympic Tin học",
+      "desc": "Huy chương Đồng bảng không chuyên tại vòng chung kết Olympic Tin học Miền Trung - Tây Nguyên lần thứ IV.",
+      "articleUrl": "https://lamdong.gov.vn/sites/asean/tin-tuc/tt-tinh/SitePages/Doan-Lam-Dong-doat-37-giai-02-huy-chuong-Vang-8-huy-chuong-Bac-19-huy-chuong-Dong-va-8-giai-Khuyen-khich-tai-Ky-thi-Olympic-Tin-hoc-mien-Trung-va-Tay-Nguyen-lan-thu-IV-nam-2023.aspx"
+    },
+    {
+      "id": "aw-robotics-2023",
+      "year": "2023",
+      "title": "Giải Khuyến Khích Bảng C Cuộc Thi Lập Trình & Điều Khiển Robot Cấp Tỉnh (2023)",
+      "issuer": "Tỉnh Đoàn & Sở GD&ĐT Lâm Đồng",
+      "badge": "GIẢI KK ROBOTICS CẤP TỈNH",
+      "scope": "Cấp tỉnh",
+      "category": "Robotics & Lập trình",
+      "desc": "Giải Khuyến khích bảng C, thi thiết kế và điều khiển robot tự động cấp tỉnh."
+    },
+    {
+      "id": "aw-startup-2023",
+      "year": "2023",
+      "title": "Giải Ba Cuộc Thi Khởi Nghiệp Đổi Mới Sáng Tạo Tỉnh Lâm Đồng",
+      "issuer": "UBND Tỉnh & Sở Khoa học và Công nghệ Tỉnh Lâm Đồng",
+      "badge": "GIẢI BA KHỞI NGHIỆP ĐMST",
+      "scope": "Cấp tỉnh",
+      "category": "Khởi nghiệp & Đổi mới sáng tạo",
+      "desc": "Giải Ba cuộc thi Khởi nghiệp Đổi mới sáng tạo cấp tỉnh, với một dự án công nghệ mình nghĩ ra để giải quyết một vấn đề thực tế."
+    },
+    {
+      "id": "aw-coolest-champion-2022",
+      "year": "2022",
+      "title": "Giải Nhất Cuộc Thi Lập Trình Coolest Projects Malaysia (2022)",
+      "issuer": "Raspberry Pi Foundation & Coolest Projects",
+      "badge": "QUÁN QUÂN QUỐC TẾ",
+      "scope": "Quốc tế",
+      "category": "Lập trình Quốc tế",
+      "desc": "Quán quân toàn cuộc thi Coolest Projects Malaysia với chiếc thuyền thu gom rác mặt nước tự động mình làm, ứng dụng AIoT và YOLOv8.",
+      "articleUrl": "https://web.archive.org/web/20240810060508/https://lamdong.edu.vn/vi/sgddetail/?param=lam-dong-doat-giai-vo-dich-bang-va-vo-dich-toan-cuoc-thi-lap-trinh-quoc-te-coolest-project-malaysia-2022"
+    },
+    {
+      "id": "aw-coolest-popular-2022",
+      "year": "2022",
+      "title": "Giải Dự Án Được Bình Chọn Nhiều Nhất (Most Popular Award), Coolest Projects Malaysia",
+      "issuer": "Raspberry Pi Foundation & Coolest Projects",
+      "badge": "GIẢI BÌNH CHỌN QUỐC TẾ",
+      "scope": "Quốc tế",
+      "category": "Lập trình Quốc tế",
+      "desc": "Cùng chuyến đi đó, dự án AIoT cảnh báo xâm phạm và bảo vệ rừng của mình cũng được bình chọn nhiều nhất.",
+      "articleUrl": "https://click49.vn/lam-dong-doat-giai-cuoc-thi-lap-trinh-quoc-te-coolest-project-malaysia-2022-cua-hoc-sinh/"
+    },
+    {
+      "id": "aw-khkt-2022",
+      "year": "2022",
+      "title": "Giải Nhất Cuộc Thi Khoa Học Kỹ Thuật (KHKT) Cấp Tỉnh Lâm Đồng (2022)",
+      "issuer": "Sở Giáo dục & Đào tạo Tỉnh Lâm Đồng",
+      "badge": "GIẢI NHẤT KHKT CẤP TỈNH",
+      "scope": "Cấp tỉnh",
+      "category": "Sáng tạo KHKT",
+      "desc": "Giải Nhất cấp tỉnh năm 2022, sau đó được chọn đại diện dự Vòng Chung khảo cấp Quốc gia.",
+      "articleUrl": "https://baolamdong.vn/hoc-tro-chia-lua-cung-cong-dong-287160.html"
+    },
+    {
+      "id": "aw-mos-2022",
+      "year": "2022",
+      "title": "Giải Nhất Cuộc Thi Vô Địch Tin Học Văn Phòng Thế Giới Cấp Tỉnh (MOS)",
+      "issuer": "Sở Giáo dục & Đào tạo Tỉnh Lâm Đồng & IIG Việt Nam",
+      "badge": "GIẢI NHẤT MOS CẤP TỈNH",
+      "scope": "Cấp tỉnh",
+      "category": "Tin học văn phòng",
+      "desc": "Giải Nhất cấp tỉnh cuộc thi Vô địch Tin học Văn phòng Thế giới (MOS - Microsoft Office Specialist)."
+    },
+    {
+      "id": "aw-hsg-tin-2022",
+      "year": "2022",
+      "title": "Giải Ba Kỳ Thi Chọn Học Sinh Giỏi Cấp Tỉnh Môn Tin Học (2022)",
+      "issuer": "Sở Giáo dục & Đào tạo Tỉnh Lâm Đồng",
+      "badge": "GIẢI BA HSG TỈNH",
+      "scope": "Cấp tỉnh",
+      "category": "Học sinh giỏi",
+      "desc": "Giải Ba kỳ thi học sinh giỏi cấp tỉnh môn Tin học, phần thi lập trình giải thuật và cấu trúc dữ liệu nâng cao."
+    },
+    {
+      "id": "aw-sangtao-ttn-2021",
+      "year": "2021",
+      "title": "Giải Nhất Cuộc Thi Sáng Tạo Thanh Thiếu Niên Nhi Đồng Tỉnh Lâm Đồng (2021)",
+      "issuer": "Liên hiệp các Hội Khoa học & Kỹ thuật Tỉnh Lâm Đồng",
+      "badge": "GIẢI NHẤT SÁNG TẠO TTN",
+      "scope": "Cấp tỉnh",
+      "category": "Sáng tạo KHKT",
+      "desc": "Giải Nhất cuộc thi Sáng tạo Thanh thiếu niên, Nhi đồng tỉnh Lâm Đồng, lần thứ 17.",
+      "articleUrl": "https://baolamdong.vn/trao-41-giai-thuong-cuoc-thi-sang-tao-thanh-thieu-nien-nhi-dong-lan-thu-17-2021-287415.html"
+    },
+    {
+      "id": "aw-tinhoc-tre-tq",
+      "year": "2021",
+      "title": "Giải Khuyến Khích Hội Thi Tin Học Trẻ Toàn Quốc",
+      "issuer": "Trung ương Đoàn TNCS Hồ Chí Minh & Bộ GD&ĐT",
+      "badge": "GIẢI KK TOÀN QUỐC",
+      "scope": "Quốc gia",
+      "category": "Tin học trẻ",
+      "desc": "Đại diện tỉnh dự Hội thi Tin học trẻ toàn quốc, và nhận giải Khuyến khích."
+    },
+    {
+      "id": "aw-tinhoc-tre-tinh-2020",
+      "year": "2020",
+      "title": "Giải Nhất Hội Thi Tin Học Trẻ Tỉnh Lâm Đồng (2020)",
+      "issuer": "Tỉnh Đoàn & Sở GD&ĐT Tỉnh Lâm Đồng",
+      "badge": "GIẢI NHẤT TIN HỌC TRẺ",
+      "scope": "Cấp tỉnh",
+      "category": "Tin học trẻ",
+      "desc": "Giải Nhất hội thi Tin học trẻ cấp tỉnh, với một sản phẩm phần mềm mình tự viết để giải quyết một bài toán thực tế."
+    }
+  ],
+  "certificates": [
+    {
+      "id": "cert-dl-andrewng",
+      "year": "2026",
+      "name": "Deep Learning Specialization (5 Courses)",
+      "issuer": "DeepLearning.AI",
+      "url": "https://coursera.org/verify/specialization/JXC92WGO55MB",
+      "pdfUrl": "/certificates/Coursera JXC92WGO55MB.pdf",
+      "credentialId": "JXC92WGO55MB"
+    },
+    {
+      "id": "cert-pytorch",
+      "year": "2025",
+      "name": "PyTorch Ultimate 2024 - From Basics to Cutting-Edge Specialization",
+      "issuer": "Coursera",
+      "url": "https://coursera.org/verify/specialization/ZEKCSVCKTF9T",
+      "pdfUrl": "/certificates/Coursera ZEKCSVCKTF9T.pdf",
+      "credentialId": "ZEKCSVCKTF9T"
+    },
+    {
+      "id": "cert-genai-swe",
+      "year": "2026",
+      "name": "Generative AI Software Engineering Specialization",
+      "issuer": "Coursera",
+      "url": "https://coursera.org/verify/specialization/O0YWVM6VVI31",
+      "pdfUrl": "/certificates/Coursera O0YWVM6VVI31.pdf",
+      "credentialId": "O0YWVM6VVI31"
+    },
+    {
+      "id": "cert-ibm-ml",
+      "year": "2026",
+      "name": "IBM Introduction to Machine Learning Specialization",
+      "issuer": "IBM",
+      "url": "https://coursera.org/verify/specialization/J8BOL41UTLEY",
+      "pdfUrl": "/certificates/Coursera J8BOL41UTLEY.pdf",
+      "credentialId": "J8BOL41UTLEY"
+    },
+    {
+      "id": "cert-genai-ibm",
+      "year": "2026",
+      "name": "Generative AI Fundamentals Specialization",
+      "issuer": "IBM",
+      "url": "https://coursera.org/verify/specialization/OU1ORNWDX28S",
+      "pdfUrl": "/certificates/Coursera OU1ORNWDX28S.pdf",
+      "credentialId": "OU1ORNWDX28S"
+    },
+    {
+      "id": "cert-google-data",
+      "year": "2026",
+      "name": "Google Data Analytics Professional Certificate",
+      "issuer": "Google",
+      "url": "https://coursera.org/verify/professional-cert/XG8DAV7H44HR",
+      "pdfUrl": "/certificates/Coursera XG8DAV7H44HR.pdf",
+      "credentialId": "XG8DAV7H44HR"
+    },
+    {
+      "id": "cert-python-michigan",
+      "year": "2025",
+      "name": "Python for Everybody Specialization (5 Courses)",
+      "issuer": "University of Michigan",
+      "url": "https://coursera.org/verify/specialization/0B4KQBPPCH51",
+      "pdfUrl": "/certificates/Coursera 0B4KQBPPCH51.pdf",
+      "credentialId": "0B4KQBPPCH51"
+    },
+    {
+      "id": "cert-sdlc-minnesota",
+      "year": "2026",
+      "name": "Software Development Lifecycle Specialization",
+      "issuer": "University of Minnesota",
+      "url": "https://coursera.org/verify/specialization/30X1JEFO67ZF",
+      "pdfUrl": "/certificates/Coursera 30X1JEFO67ZF.pdf",
+      "credentialId": "30X1JEFO67ZF"
+    },
+    {
+      "id": "cert-ai-foundations-ibm",
+      "year": "2025",
+      "name": "AI Foundations for Everyone Specialization",
+      "issuer": "IBM",
+      "url": "https://coursera.org/verify/specialization/X2Q750MFX1JG",
+      "pdfUrl": "/certificates/Coursera X2Q750MFX1JG.pdf",
+      "credentialId": "X2Q750MFX1JG"
+    },
+    {
+      "id": "cert-ai-ethics",
+      "year": "2026",
+      "name": "Ethics in the Age of AI Specialization",
+      "issuer": "LearnQuest",
+      "url": "https://coursera.org/verify/specialization/8MXU9Z4QJ7VW",
+      "pdfUrl": "/certificates/Coursera 8MXU9Z4QJ7VW.pdf",
+      "credentialId": "8MXU9Z4QJ7VW"
+    },
+    {
+      "id": "cert-academic-sydney",
+      "year": "2025",
+      "name": "Academic Skills for University Success Specialization",
+      "issuer": "University of Sydney",
+      "url": "https://coursera.org/verify/specialization/B8KYXY2SQ2HM",
+      "pdfUrl": "/certificates/Coursera B8KYXY2SQ2HM.pdf",
+      "credentialId": "B8KYXY2SQ2HM"
+    },
+    {
+      "id": "cert-1",
+      "year": "2022",
+      "name": "Chứng Chỉ MOS Excel 2016",
+      "issuer": "Microsoft"
+    },
+    {
+      "id": "cert-2",
+      "year": "2022",
+      "name": "Chứng Chỉ MOS Word 2016",
+      "issuer": "Microsoft"
+    },
+    {
+      "id": "cert-3",
+      "year": "2021",
+      "name": "Chứng Chỉ MOS PowerPoint 2016",
+      "issuer": "Microsoft"
+    }
+  ],
+  "citations": [
+    {
+      "id": "cite-1",
+      "title": "Lâm Đồng đoạt giải Vô địch Bảng và Vô địch toàn Cuộc thi Lập trình quốc tế Coolest Project Malaysia 2022",
+      "publisher": "Sở Giáo dục & Đào tạo Tỉnh Lâm Đồng (lamdong.edu.vn)",
+      "date": "2022",
+      "url": "https://web.archive.org/web/20240810060508/https://lamdong.edu.vn/vi/sgddetail/?param=lam-dong-doat-giai-vo-dich-bang-va-vo-dich-toan-cuoc-thi-lap-trinh-quoc-te-coolest-project-malaysia-2022",
+      "category": "Báo chí chính thống",
+      "badge": "SỞ GD&ĐT LÂM ĐỒNG",
+      "summary": "Thông tin tuyên dương học sinh Nguyễn Đức Bảo Lâm và Nguyễn Lê Quang Trực (trường THCS-THPT Đống Đa) đạt giải Vô địch toàn cuộc thi với dự án 'Thuyền hốt rác trên sông, hồ' và giải Bình chọn nhiều nhất với dự án AI bảo vệ rừng tại Coolest Projects Malaysia.",
+      "featured": true
+    },
+    {
+      "id": "cite-2",
+      "title": "Đoàn Lâm Đồng đoạt 37 giải tại Kỳ thi Olympic Tin học miền Trung và Tây Nguyên lần thứ IV năm 2023",
+      "publisher": "Cổng Thông Tin Điện Tử Tỉnh Lâm Đồng (lamdong.gov.vn)",
+      "date": "2023",
+      "url": "https://lamdong.gov.vn/sites/asean/tin-tuc/tt-tinh/SitePages/Doan-Lam-Dong-doat-37-giai-02-huy-chuong-Vang-8-huy-chuong-Bac-19-huy-chuong-Dong-va-8-giai-Khuyen-khich-tai-Ky-thi-Olympic-Tin-hoc-mien-Trung-va-Tay-Nguyen-lan-thu-IV-nam-2023.aspx",
+      "category": "Báo chí chính thống",
+      "badge": "CỔNG TTĐT TỈNH LÂM ĐỒNG",
+      "summary": "Bản tin tổng kết Vòng chung kết Olympic Tin học Miền Trung - Tây Nguyên lần thứ IV tại Đà Nẵng, vinh danh Nguyễn Đức Bảo Lâm (Trường THCS-THPT Đống Đa) đạt Huy chương Đồng bảng Không chuyên.",
+      "featured": true
+    },
+    {
+      "id": "cite-3",
+      "title": "Sáng tạo không đợi tuổi — Gương mặt học sinh Nguyễn Đức Bảo Lâm với đam mê nghiên cứu khoa học kỹ thuật",
+      "publisher": "Báo Lâm Đồng Online (baolamdong.vn)",
+      "date": "2021",
+      "url": "https://baolamdong.vn/sang-tao-khong-doi-tuoi-287436.html",
+      "category": "Báo chí chính thống",
+      "badge": "BÁO LÂM ĐỒNG",
+      "summary": "Bài viết chân dung giới thiệu Nguyễn Đức Bảo Lâm, chia sẻ về quá trình tự tìm tòi lập trình, lắp ráp mạch vi điều khiển và ứng dụng trí tuệ nhân tạo giải quyết các bài toán cuộc sống.",
+      "featured": true
+    },
+    {
+      "id": "cite-4",
+      "title": "Học trò chia lửa cùng cộng đồng — Sáng chế thiết bị AIoT cảnh báo bảo vệ rừng",
+      "publisher": "Báo Lâm Đồng Online (baolamdong.vn)",
+      "date": "2021",
+      "url": "https://baolamdong.vn/hoc-tro-chia-lua-cung-cong-dong-287160.html",
+      "category": "Báo chí chính thống",
+      "badge": "BÁO LÂM ĐỒNG",
+      "summary": "Phóng sự chi tiết về thiết bị AI phân loại âm thanh phát hiện tiếng cưa máy và xử lý ảnh truyền cảnh báo qua sóng LoRa, đạt giải Nhất toàn quốc Quỹ Dariu và giải Nhất Sáng tạo KHKT tỉnh.",
+      "featured": true
+    },
+    {
+      "id": "cite-5",
+      "title": "Lâm Đồng: Đoạt giải Cuộc thi lập trình quốc tế Coolest Project Malaysia 2022 của học sinh",
+      "publisher": "Tin Tức Lâm Đồng (Click49.vn)",
+      "date": "2022",
+      "url": "https://click49.vn/lam-dong-doat-giai-cuoc-thi-lap-trinh-quoc-te-coolest-project-malaysia-2022-cua-hoc-sinh/",
+      "category": "Báo chí chính thống",
+      "badge": "CLICK49 NEWS",
+      "summary": "Đưa tin chi tiết về đoàn học sinh trường THCS & THPT Đống Đa đại diện Việt Nam tranh tài tại Penang (Malaysia) và giành giải thưởng quốc tế cao nhất.",
+      "featured": true
+    },
+    {
+      "id": "cite-6",
+      "title": "Đà Lạt tuyên dương và trao thưởng cho học sinh giỏi các cấp năm học 2022 - 2023",
+      "publisher": "Báo Lâm Đồng Online (baolamdong.vn)",
+      "date": "2023",
+      "url": "https://baolamdong.vn/da-lat-tuyen-duong-va-trao-thuong-cho-hoc-sinh-gioi-cac-cap-nam-hoc-2022-2023-288151.html",
+      "category": "Báo chí chính thống",
+      "badge": "BÁO LÂM ĐỒNG",
+      "summary": "Ghi nhận khen thưởng của UBND TP. Đà Lạt dành cho Nguyễn Đức Bảo Lâm với chuỗi thành tích giải Nhất KHKT, giải Ba HSG Tin học và Giải Nhất cuộc thi lập trình quốc tế.",
+      "featured": false
+    },
+    {
+      "id": "cite-7",
+      "title": "Trao 41 giải thưởng Cuộc thi Sáng tạo thanh thiếu niên, nhi đồng lần thứ 17 (2021)",
+      "publisher": "Báo Lâm Đồng Online (baolamdong.vn)",
+      "date": "2021",
+      "url": "https://baolamdong.vn/trao-41-giai-thuong-cuoc-thi-sang-tao-thanh-thieu-nien-nhi-dong-lan-thu-17-2021-287415.html",
+      "category": "Báo chí chính thống",
+      "badge": "BÁO LÂM ĐỒNG",
+      "summary": "Lễ tổng kết và trao giải thưởng Cuộc thi Sáng tạo TTN, Nhi đồng cấp tỉnh, vinh danh giải Nhất cho sản phẩm ứng dụng trí tuệ nhân tạo trong công tác bảo vệ rừng.",
+      "featured": false
+    },
+    {
+      "id": "cite-8",
+      "title": "Sinh viên Trường Đại học FPT ghi dấu ấn tại Olympic Trí tuệ nhân tạo 2026, xuất sắc chinh phục hai giải thưởng ấn tượng",
+      "publisher": "Trường Đại học FPT TP.HCM (daihoc.fpt.edu.vn)",
+      "date": "2026",
+      "url": "https://daihoc.fpt.edu.vn/hcm/sinh-vien-truong-dai-hoc-fpt-ghi-dau-an-tai-olympic-tri-tue-nhan-tao-2026-xuat-sac-chinh-phuc-hai-giai-thuong-an-tuong/",
+      "category": "Học thuật & Nghiên cứu",
+      "badge": "ĐẠI HỌC FPT TP.HCM",
+      "summary": "Bản tin đưa tin Vòng thi khu vực miền Nam Olympic Trí tuệ nhân tạo Sinh viên Việt Nam (OlpAI) 2026 do Hội Tin học Việt Nam tổ chức. Đội NewEraPTL với Nguyễn Đức Bảo Lâm (SE201460), Nguyễn Công Thịnh và Ngô Văn Trường Phúc giành Đồng Giải Ba (Rank 44/191) sau 6 giờ tranh tài với các bài toán AI thực tế.",
+      "featured": true
+    },
+    {
+      "id": "cite-9",
+      "title": "Sinh viên Trường Đại học FPT xuất sắc vào Top 10 Chung kết toàn quốc VEDC 2026 với dự án EdgeFlow AI",
+      "publisher": "Trường Đại học FPT TP.HCM (daihoc.fpt.edu.vn)",
+      "date": "2026",
+      "url": "https://daihoc.fpt.edu.vn/hcm/sinh-vien-truong-dai-hoc-fpt-xuat-sac-vao-top-10-chung-ket-toan-quoc-vedc-2026-voi-du-an-edgeflow-ai/",
+      "category": "Học thuật & Nghiên cứu",
+      "badge": "ĐẠI HỌC FPT TP.HCM",
+      "summary": "Bản tin vinh danh đội 31µF (gồm Nguyễn Đức Bảo Lâm, Nguyễn Công Thịnh, Ngô Văn Trường Phúc, Đỗ Minh Hiển; GVHD: Thầy Nguyễn Xuân Huy) lọt Top 10 Chung kết Toàn quốc Cuộc thi Thiết kế Điện tử Việt Nam (VEDC) 2026 với dự án EdgeFlow AI, hệ thống điều khiển đèn giao thông thông minh ứng dụng Computer Vision và mô phỏng SUMO thích ứng theo lưu lượng thời gian thực.",
+      "featured": true
+    }
+  ],
+  "guestbook": []
+}
