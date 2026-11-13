@@ -463,6 +463,20 @@
       "role": "Học sinh THPT & Thành viên Đội tuyển Tin học",
       "guild": "Trường THCS & THPT Đống Đa, Đà Lạt",
       "desc": "Những năm cấp 3 ở Trường THCS & THPT Đống Đa, Đà Lạt, mình vừa học vừa tham gia đội tuyển Tin học, đạt 2 giải Ba kỳ thi Học sinh giỏi cấp tỉnh (2021, 2022), và tốt nghiệp loại Giỏi."
+    },
+    {
+      "id": "t-6",
+      "period": "2015 - 2019",
+      "role": "Học Sinh THCS",
+      "guild": "Trường THCS & THPT Đống Đa, Đà Lạt",
+      "desc": "Mình học cấp 2 tại Trường THCS & THPT Đống Đa, Đà Lạt, từ năm 2015 đến 2019, trước khi tiếp tục lên cấp 3 tại chính trường này."
+    },
+    {
+      "id": "t-7",
+      "period": "Trước 2015",
+      "role": "Học Sinh Tiểu Học",
+      "guild": "Trường Tiểu Học Phước Thành, Đà Lạt",
+      "desc": "Mình học tiểu học tại Trường Tiểu học Phước Thành, Đà Lạt."
     }
   ],
   "awards": [

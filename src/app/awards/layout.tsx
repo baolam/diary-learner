@@ -9,6 +9,16 @@ const DESCRIPTION =
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
+  keywords: [
+    "VEDC 2026",
+    "Olympic AI",
+    "RMIT Hackathon",
+    "Coolest Projects Malaysia",
+    "Khoa học Kỹ thuật Lâm Đồng",
+    "Sinh viên Xuất sắc FPT",
+    "Giải thưởng AI",
+    "Hackathon sinh viên",
+  ],
   alternates: { canonical: URL },
   openGraph: { title: TITLE, description: DESCRIPTION, url: URL },
   twitter: { title: TITLE, description: DESCRIPTION },

@@ -9,6 +9,15 @@ const DESCRIPTION =
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
+  keywords: [
+    "DeepLearning.AI",
+    "Coursera",
+    "IBM Machine Learning",
+    "Google Data Analytics",
+    "Python for Everybody",
+    "Generative AI",
+    "Chứng chỉ AI",
+  ],
   alternates: { canonical: URL },
   openGraph: { title: TITLE, description: DESCRIPTION, url: URL },
   twitter: { title: TITLE, description: DESCRIPTION },

@@ -80,10 +80,12 @@ export default function AwardsSection({ awards = [], certificates = [], citation
     return true;
   });
 
-  const filteredCitations = citations.filter((item) => {
-    if (activeCitationCategory === "ALL") return true;
-    return item.category === activeCitationCategory;
-  });
+  const filteredCitations = citations
+    .filter((item) => {
+      if (activeCitationCategory === "ALL") return true;
+      return item.category === activeCitationCategory;
+    })
+    .sort((a, b) => Number(b.date) - Number(a.date));
 
   // Calculate stats
   const aiAndHackathonCount = awards.filter(

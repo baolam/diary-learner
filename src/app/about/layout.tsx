@@ -9,6 +9,16 @@ const DESCRIPTION =
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
+  keywords: [
+    "Tiểu sử Nguyễn Đức Bảo Lâm",
+    "FPT University",
+    "Đại học FPT TP.HCM",
+    "Trí tuệ nhân tạo",
+    "Hành trình học AI",
+    "Computer Vision",
+    "Trường Đống Đa",
+    "Trường Phước Thành",
+  ],
   alternates: { canonical: URL },
   openGraph: { title: TITLE, description: DESCRIPTION, url: URL },
   twitter: { title: TITLE, description: DESCRIPTION },
